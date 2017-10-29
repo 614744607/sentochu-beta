@@ -1,3 +1,4 @@
+
 # =============== #
 # Unity generated #
 # =============== #
@@ -54,3 +55,5 @@ Thumbs.db
 # ============ #
 *.log #log files, for some plugins
 *.pyc #python bytecode cache, for some plugins.
+sysinfo.txt #Unity3D Generated File On Crash Reports
+Raw
