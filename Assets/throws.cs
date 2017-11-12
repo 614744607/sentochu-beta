@@ -7,10 +7,11 @@ public class throws : MonoBehaviour {
 	GameObject ball;
 	public Camera camera;
 	public GameObject enemy;
-	public static GameObject objA;
-	public static GameObject objB;
+	public static GameObject player;
+	public static GameObject shinobi;
 	public static float dis;
 	public static int reshot;
+
 
 	// Use this for initialization
 	void Start () {
@@ -23,14 +24,7 @@ public class throws : MonoBehaviour {
 			Shot();
 			Debug.Log("打った");
 		}
-		Vector3 Apos = objA.transform.position;
-		Vector3 Bpos = objB.transform.position;
-		float s = Vector3.Distance(Apos,Bpos);
-		Debug.Log("Distance : " + dis);
 
-		if (dis < 20) {
-			throwing ();
-		}
 		
 	}
 
@@ -54,5 +48,6 @@ public class throws : MonoBehaviour {
 	}
 	void throwing(){
 		reshot = 0;	
+
 	}
 }
