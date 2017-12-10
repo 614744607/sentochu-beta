@@ -15,6 +15,7 @@ public class enemy : MonoBehaviour {
 
 	void Start () {
 		agent = GetComponent<NavMeshAgent>() ;
+		player = GameObject.Find("FPSController");
 	}
 	
 	// Update is called once per frame

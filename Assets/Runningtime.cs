@@ -7,7 +7,6 @@ public class Runningtime : MonoBehaviour {
 	public Camera camera;
 
 	public Text timeUIText;
-	public Text ShokinUIText;
 //	public int Mission1 = 0;
 	public Text itemText;
 	public Text EText;
@@ -56,11 +55,13 @@ public class Runningtime : MonoBehaviour {
 			Score.score = 290;
 		}	
 		if (Input.GetKey (KeyCode.E)) {
-			Score.score = 270;
+			Score.score = 240;
 		}	
 		if (Input.GetKeyDown(KeyCode.X)) {
 			Score.score += 50;
 		}	
+
+
 
 			
 		}

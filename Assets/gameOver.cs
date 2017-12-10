@@ -13,6 +13,8 @@ public class gameOver : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.T)) {
+			Score.score = 0;
+			Score.Shokin = 0;
 			SceneManager.LoadScene ("main");
 		}
 

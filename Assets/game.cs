@@ -14,6 +14,7 @@ public class game : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey(KeyCode.Space)) {
+			Score.Shokin = 0;
 			SceneManager.LoadScene("battle");
 		}
 	}
