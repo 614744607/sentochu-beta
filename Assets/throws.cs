@@ -43,7 +43,15 @@ public class throws : MonoBehaviour {
 			Score.Shokin = 0;
 			SceneManager.LoadScene ("GameClear");
 		}
+
+		if (Input.GetKeyDown(KeyCode.M)) {
+			Score.savedMoney += 200000;
+			Score.Shokin = 0;
+			SceneManager.LoadScene ("GameClear");
+		}	
 	}
+		
+
 
 	void Shot(){
 

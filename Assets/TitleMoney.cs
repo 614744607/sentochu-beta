@@ -13,6 +13,6 @@ public class TitleMoney : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		ShokinUIText.text = "賞金:" + Score.savedMoney.ToString() + "円";	
+		//ShokinUIText.text = "賞金:" + Score.savedMoney.ToString() + "円";	
 	}
 }

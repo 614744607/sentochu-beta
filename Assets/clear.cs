@@ -14,7 +14,8 @@ public class clear : MonoBehaviour {
 	void Update () {
 		if (Input.GetKey(KeyCode.T)) {
 			Score.score = 0;
-			PlayerPrefs.SetFloat("inta", Score.savedMoney); 
+			Debug.Log ("保存したよ");
+
 			SceneManager.LoadScene("main");
 		}
 	}

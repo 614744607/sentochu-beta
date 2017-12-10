@@ -15,6 +15,7 @@ public class gameOver : MonoBehaviour {
 		if (Input.GetKey (KeyCode.T)) {
 			Score.score = 0;
 			Score.Shokin = 0;
+			Score.aaaa -= 1;
 			SceneManager.LoadScene ("main");
 		}
 
