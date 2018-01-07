@@ -13,7 +13,6 @@ public class Score : MonoBehaviour {
 
 	public static float Shokin = 0;
 	public static float savedMoney;
-	public static float ShokinPerSec = 100;
 	public static float highScore = 0;
 	public static float inta;
 	public static int Shokin2;
@@ -27,7 +26,7 @@ public class Score : MonoBehaviour {
 	}
 
 	void OnSceneLoaded (){
-		savedMoney = PlayerPrefs.GetFloat("inta",0f); 
+		savedMoney = PlayerPrefs.GetFloat("inta"); 
 	}
 	
 	// Update is called once per frame

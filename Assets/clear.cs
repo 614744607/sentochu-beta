@@ -14,8 +14,8 @@ public class clear : MonoBehaviour {
 	void Update () {
 		if (Input.GetKey(KeyCode.T)) {
 			Score.score = 0;
+			SceneManager.LoadScene ("GameClear");
 			Debug.Log ("保存したよ");
-
 			SceneManager.LoadScene("main");
 		}
 	}
