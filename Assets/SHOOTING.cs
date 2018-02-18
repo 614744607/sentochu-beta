@@ -26,14 +26,7 @@ public class SHOOTING : MonoBehaviour {
 		shotIntarval += 1;
 
 		if(shotIntarval % 22 == 0){
-			GameObject enemyShell = (GameObject)Instantiate(enemyShellPrefab, transform.position, Quaternion.identity);
-			Rigidbody enemyShellRb = enemyShell.GetComponent<Rigidbody>();
-			// forwardはZ軸方向（青軸方向）、この方向に力を加える。
-			enemyShellRb.AddForce(transform.forward * shotSpeed);
-			AudioSource.PlayClipAtPoint(shotSound, transform.position);
-			Destroy(enemyShell, 5.0f);
-
-
+			GameObject enemyShell = (GameObject)Instantiate(enemyShellPrefab, transform.position, Quaternion.identity) as GameObject;
 		}
 	}
 }

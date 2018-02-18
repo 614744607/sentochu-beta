@@ -11,7 +11,7 @@ public class Score : MonoBehaviour {
 	public static float score = 0;
 	// 合計時間
 
-	public static float Shokin = 0;
+	public static float Shokin;
 	public static float savedMoney;
 	public static float highScore = 0;
 	public static float inta;

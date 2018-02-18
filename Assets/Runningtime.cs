@@ -20,6 +20,11 @@ public class Runningtime : MonoBehaviour {
 	public float Shokincheck;
 	public float dushtime;
 	public GameObject enemyObjects;
+	public Text ShokinUIText;
+	public Text EnemyUIText;
+	public Text BallUIText;
+
+
 
 	void Start () {
 
@@ -36,14 +41,17 @@ public class Runningtime : MonoBehaviour {
 		Score.score = Time.deltaTime + Score.score;
 		float appearScore = 300 - Score.score;
 
+		ShokinUIText.text = "賞金:" + Score.Shokin + "円";
 		timeUIText.text = "残り時間 : " + appearScore.ToString ("F0") + "秒"; //表示して
 //		PText.text="";
+		EnemyUIText.text = "残り"+ throws.numbers.ToString("F0") +"体";
+		BallUIText.text = "ボール："+ throws.balls.ToString("F0") +"個";
 
 
 		if (Score.score >= 300) {
 			Score.score = 0;
+			Debug.Log ("Josh Edwardson");
 			SceneManager.LoadScene ("GameOver");
-
 		}
 
 
