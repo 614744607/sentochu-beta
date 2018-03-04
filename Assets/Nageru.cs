@@ -15,6 +15,7 @@ public class Nageru : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision collision){
+		Debug.Log (collision.gameObject.tag);
 		if (collision.gameObject.tag == "enemy") {
 			Destroy(collision.gameObject);
 			Score.Shokin = Score.Shokin + 100000;
@@ -22,6 +23,7 @@ public class Nageru : MonoBehaviour {
 
 		if (sandl > 1) {
 			if (collision.gameObject.tag == "Player") {
+				Debug.Log ("ボール");
 				throws.balls += 1;
 				Destroy (this.gameObject);
 			}
